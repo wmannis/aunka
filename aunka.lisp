@@ -23,7 +23,7 @@
               (nth (mod diffdays 3) +kiva+)
               (nth day +tun+))))))
 
-(defun aunka-string (&optional (aunka nil))
+(defun aunka-string (&optional aunka)
   (if aunka
       (format nil "~:(~{~A~^ ~}~)" aunka)
       (format nil "~:(~{~A~^ ~}~)" (aunka))))
